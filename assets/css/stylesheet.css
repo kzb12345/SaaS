@@ -1,0 +1,221 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  
+  
+  /* Logo do site */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #003d6a;
+  }
+  
+  /* Menu */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #003d6a;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #0077cc;
+  }
+  
+  /* Hero / destaque */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+  
+  /* Botão bonito */
+  .btn {
+    display: inline-block;
+    background-color: #0077cc;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #005fa3;
+  }
+  /* Seções gerais */
+section {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .planos {
+    padding: 80px 20px;
+  }
+  
+  .planos h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #003d6a;
+  }
+  
+  /* Cards de planos */
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    color: #0077cc;
+    margin-bottom: 20px;
+  }
+  
+  .card ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .card ul li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    position: relative;
+    padding-left: 24px;
+  }
+  
+  .card ul li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Preço */
+  .card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* Destaque visual no plano intermediário */
+  .card.destaque {
+    border: 2px solid #0077cc;
+    background: linear-gradient(135deg, #e6f0ff, #ffffff);
+    transform: scale(1.05);
+  }
+  
+  /* Botão de ação */
+  .card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  .card .btn:hover {
+    background: #005fa3;
+  }
+  
+  /* Sobre */
+  .sobre p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Depoimentos */
+  .comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .comentarios blockquote {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #0077cc;
+    border-radius: 8px;
+    font-style: italic;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .comentarios span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  

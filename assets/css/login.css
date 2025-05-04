@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+  }
+  
+  /* Caixa de login */
+  .login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Título */
+  .login-container h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: #003d6a;
+    text-align: center;
+  }
+  
+  /* Labels e Inputs */
+  .login-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #003d6a;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  /* Botão */
+  .login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-container button:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Link de cadastro */
+  .login-container .link {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  
+  .login-container .link a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .login-container .link a:hover {
+    text-decoration: underline;
+  }
+  .voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #0077cc;
+    text-decoration: none;
+    font-size: 14px;
+    background: #e6f0ff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .voltar:hover {
+    background: #d0e7ff;
+    color: #005fa3;
+  }
